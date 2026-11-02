@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Welcome to my home</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5d9e8, #e8defb);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+    padding: 80px 15px;
+    background: rgba(255,255,255,0.4);
+}
+
+header h1 {
+    font-size: 55px;
+    color: #713b5b;
+    font-family: Georgia, serif;
+    text-shadow: 2px 2px 10px rgba(255,255,255,0.8);
+}
+
+header p {
+    margin-top: 15px;
+    font-size: 17px;
+    color: #555;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: rgba(255,255,255,0.9);
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav a {
+    text-decoration: none;
+    color: #713b5b;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* MAIN SECTION */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #713b5b;
+}
+
+/* IMAGE FRAME */
+
+.image-frame {
+    width: 80%;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 12px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+}
+
+.image-frame img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* PRODUCTS */
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.product {
+    width: 280px;
+    background: rgba(255,255,255,0.95);
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-8px);
+}
+
+.product img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.product h3 {
+    margin: 15px 0;
+    color: #713b5b;
+}
+
+.product p {
+    margin-bottom: 12px;
+    color: #444;
+}
+
+button {
+    background: #9b557c;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #713b5b;
+}
+
+/* CONTACT */
+
+.contact {
+    background: rgba(255,255,255,0.9);
+    padding: 35px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:600px) {
+    header h1 {
+        font-size: 32px;
+    }
+    .image-frame {
+        width: 100%;
+    }
+    nav a {
+        margin: 5px 8px;
+        font-size: 13px;
+        display: inline-block;
+    }
+    .product {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- WEBSITE HEADING -->
+
+<header>
+    <h1>Welcome to my home.</h1>
+    <p>Discover Something Beautiful!</p>
+</header>
+
+<!-- MENU -->
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME -->
+
+<div class="container" id="home">
+
+    <h2>Welcome to Our Store</h2>
+
+    <p>Find Your Favourite Products Here.</p>
+
+    <!-- MAIN IMAGE FRAME -->
+
+    <div class="image-frame">
+
+        <img src="https://placehold.co/650x300/f5d9e8/713b5b?text=Welcome+Image" alt="Welcome Image">
+
+    </div>
+
+</div>
+
+<!-- SHOP -->
+
+<div class="container" id="shop">
+
+    <h2>Our Products</h2>
+
+    <div class="products">
+
+        <div class="product">
+
+            <img src="https://placehold.co/400x250/f5d9e8/713b5b?text=Product+1" alt="Product 1">
+
+            <h3>Beautiful Gifts</h3>
+
+            <p>Price: ₹299</p>
+
+            <button onclick="buy('Beautiful Gifts')">
+                Buy Now
+            </button>
+
+        </div>
+
+        <div class="product">
+
+            <img src="https://placehold.co/400x250/e8defb/713b5b?text=Product+2" alt="Product 2">
+
+            <h3>Fashion Items</h3>
+
+            <p>Price: ₹499</p>
+
+            <button onclick="buy('Fashion Items')">
+                Buy Now
+            </button>
+
+        </div>
+
+        <div class="product">
+
+            <img src="https://placehold.co/400x250/fbe5d8/713b5b?text=Product+3" alt="Product 3">
+
+            <h3>Special Collection</h3>
+
+            <p>Price: ₹399</p>
+
+            <button onclick="buy('Special Collection')">
+                Buy Now
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ABOUT -->
+
+<div class="container" id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        Welcome to my home.
+        We bring beautiful products
+        and special collections for you.
+    </p>
+
+</div>
+
+<!-- CONTACT -->
+
+<div class="container" id="contact">
+
+    <div class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Thank you for visiting our store!</p>
+
+        <br>
+
+        <button onclick="alert('Contact us soon!')">
+            Contact Now
+        </button>
+
+    </div>
+
+</div>
+
+<footer>
+
+    © 2026 Welcome to my home.
+    All Rights Reserved.
+
+</footer>
+
+<script>
+
+function buy(product) {
+
+    alert(product + " selected successfully!");
+
+}
+
+</script>
+
+</body>
+</html>
